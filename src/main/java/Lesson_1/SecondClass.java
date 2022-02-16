@@ -16,9 +16,13 @@ public class SecondClass {
         kolya.age = 25;
         kolya.name = "Kolya";
 
-        System.out.println("--- " + i + " ---");
-        System.out.println();
-        System.out.println("~~~ " + kolya.name + ", he turned " + kolya.age + " " + i + " years ago" + " ~~~");
+        String pattern = "--- %03d ---";
+        String pattern2 = "%n~~~ %S, he turned %d %d years ago ~~~ %n%n";
+
+        System.out.printf(pattern, i);
+        System.out.printf(pattern2, kolya.name, kolya.age, i);
+
+        System.out.println("Спасибо, Тарас! Действительно удобней с форматированием строк.");
     }
 
 }
