@@ -22,13 +22,24 @@ public class Dz_09 {
 
                 int numStr = 0;
 
+//                if (elementString.length() % 2 == 0 && numStr < 2) {
+//                    char[] charsChenge = elementString.toUpperCase().toCharArray();
+//                    char[] sortedCharsChenge = Arrays.copyOf(charsChenge, charsChenge.length);  // со слов Тараса - charsChenge не обязательно использовать!
+//                    Arrays.sort(sortedCharsChenge);
+//
+//                    for (int i = 0; i < sortedCharsChenge.length; i += 2) {
+//                        if (sortedCharsChenge[i] != sortedCharsChenge[i + 1]){
+//                            ifEvenChars = false;
+//                            break;
+//                        }
+//                    }
                 if (elementString.length() % 2 == 0 && numStr < 2) {
                     char[] charsChenge = elementString.toUpperCase().toCharArray();
-                    char[] sortedCharsChenge = Arrays.copyOf(charsChenge, charsChenge.length);
-                    Arrays.sort(sortedCharsChenge);
+                    //char[] sortedCharsChenge = Arrays.copyOf(charsChenge, charsChenge.length);  // со слов Тараса - charsChenge не обязательно использовать!
+                    Arrays.sort(charsChenge);
 
-                    for (int i = 0; i < sortedCharsChenge.length; i += 2) {
-                        if (sortedCharsChenge[i] != sortedCharsChenge[i + 1]){
+                    for (int i = 0; i < charsChenge.length; i += 2) {
+                        if (charsChenge[i] != charsChenge[i + 1]){
                             ifEvenChars = false;
                             break;
                         }
