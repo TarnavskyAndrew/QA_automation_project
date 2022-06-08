@@ -16,14 +16,14 @@ public enum Planet {
 
     final String name;
     final double mass;   // in nonillion kg
-    final double radius; // in km
+    final int radius; // in km
     double remotenessFromTheSun; // mln km
     final double remotenessFromPrevious; // mln km
     final Planet previousPlanet;
     Planet nextPlanet;
     final double number;
 
-    Planet(String name, double mass, double radius, double remotenessFromPrevious, double remotenessFromTheSun, Planet previousPlanet, double number) {
+    Planet(String name, double mass, int radius, double remotenessFromPrevious, double remotenessFromTheSun, Planet previousPlanet, double number) {
 
         this.name = name;
         this.mass = mass;
@@ -35,7 +35,7 @@ public enum Planet {
         //previousPlanet.nextPlanet = this;
     }
 
-    Planet(String name, double mass, double radius, double remotenessFromPrevious, Planet previousPlanet, double number) {
+    Planet(String name, double mass, int radius, double remotenessFromPrevious, Planet previousPlanet, double number) {
 
         this.name = name;
         this.mass = mass;
