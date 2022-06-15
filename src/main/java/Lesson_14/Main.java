@@ -24,5 +24,4 @@ public class Main {
         group.renameStudent(5, "Petro", "Pupkin");
 
     }
-
 }
