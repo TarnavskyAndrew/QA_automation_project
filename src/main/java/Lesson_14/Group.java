@@ -4,7 +4,6 @@ import java.util.*;
 
 public class Group {
 
-
     private Students starosta;
 
     private List<Students> students = new ArrayList<>();
